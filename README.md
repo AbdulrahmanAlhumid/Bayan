@@ -6,13 +6,10 @@ Bayan is an Arabic-first web application for analyzing legal and regulatory docu
 
 | Layer | Technology | Purpose |
 | --- | --- | --- |
-| Frontend | React 19 | UI rendering and state-driven views |
-| Frontend Build Tool | Vite 7 | Development server and production build |
+| Frontend | React + Vite | User interface and frontend development workflow |
 | Backend | Node.js + Express | Local API layer for Gemini requests |
-| AI Integration | Google Gemini (`@google/genai`) | Document analysis and chat responses |
-| Styling | Plain CSS | Custom UI styling and theme support |
-| Tooling | ESLint | Code quality checks |
-| Runtime Config | dotenv | Environment variable loading |
+| AI | Google Gemini | Document analysis and contextual chat |
+| Styling | CSS | Custom UI styling and theme support |
 
 ## Prerequisites
 
@@ -112,6 +109,12 @@ bayan/
 - View and manage local analysis history
 - Switch between dark and light themes
 - Keep the Gemini API key on the backend instead of exposing it in the browser
+
+## Data Persistence
+
+Analysis history is stored locally in the user's browser through local storage and is not backed by a database or user account.
+
+This means the saved history is available on the same browser and device, but it may be lost if browser storage is cleared or the app is opened from a different browser or machine.
 
 ## Available Scripts
 
