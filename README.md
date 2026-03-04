@@ -108,7 +108,6 @@ bayan/
 - Ask follow-up questions in a contextual chat view
 - View and manage local analysis history
 - Switch between dark and light themes
-- Keep the Gemini API key on the backend instead of exposing it in the browser
 
 ## Data Persistence
 
